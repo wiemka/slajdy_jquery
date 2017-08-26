@@ -1,0 +1,10 @@
+#slider {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide-show {
+    position: absolute;
+    height: 100%;
+}
