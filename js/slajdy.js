@@ -1,8 +1,13 @@
 "use strict";
 
-var slider = $("#slider");
-var slideshow = $(".slide-show");
-var slideCount = $(".slide-show").length;
-var slideWidth = function () {
-    100 / slideCount;
+$(function () {
+    //zmienne
+    var slider = $("#slider");
+    var slideShow = $(".slide-show");
+    var slideCount = slideShow.children().length;
+    var slideWidth = 100 / slideCount;
+    var slideIndex = 0;
 }
+
+$(".slide-show").css.
+})
