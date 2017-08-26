@@ -7,7 +7,8 @@ $(function () {
     var slideCount = slideShow.children().length;
     var slideWidth = 100 / slideCount;
     var slideIndex = 0;
-}
 
-$(".slide-show").css.
+    //szerokość kontenera slideshow
+    slideShow.css("width", slideCount * 100 + "%");
+
 })
