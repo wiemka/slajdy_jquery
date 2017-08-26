@@ -10,5 +10,20 @@ $(function () {
 
     //szerokość kontenera slideshow
     slideShow.css("width", slideCount * 100 + "%");
+    //iteracja po wszystkich slajdach i nadanie im marginesów i szerokości
+    slideShow.find(".single-slide").each(function (index) {
+        $(this).css({
+            "width": slideWidth + "%",
+            "margin-left": index * slideWidth + "%"
+        })
+    })
 
+    //przycisk poprzedni - wywołanie funkcji slide()
+    $(".prev-slide").click(function () {
+        slide(slideIndex - 1);
+    })
+    //przycisk następny - wywołanie funkcji slide()
+    $(".next-slide").click(function () {
+        slide(slideIndex + 1);
+    })
 })
