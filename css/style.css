@@ -36,3 +36,13 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.prev-slide {
+    position: absolute;
+    left: 0;
+}
+
+.next-slide {
+    position: absolute;
+    right: 0;
+}
